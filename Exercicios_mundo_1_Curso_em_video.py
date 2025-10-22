@@ -39,7 +39,7 @@ listaExercicios = [
 # EXERCISES ONE WORLD
 #---------------------------------------------------------------------------------------------------------------------------------------#
 def printNomeExercício(n):
-    print("\n"*2,linha*2,"\n"*2)
+    print('\n'*2,'#'*30,'\n'*2)
     print(listaExercicios[n])
     print('\n'*2,'#'*30,'\n'*2)
     print("RESPOSTA:\n")
