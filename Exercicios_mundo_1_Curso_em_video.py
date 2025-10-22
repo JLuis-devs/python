@@ -44,22 +44,7 @@ def printNomeExercício(n):
     print('\n'*2,'#'*30,'\n'*2)
     print("RESPOSTA:\n")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 Fim = 1
-
-
 while Fim != 0:
     n = int(input(listaExercicios[0]))
     if n == 0:
@@ -106,7 +91,7 @@ while Fim != 0:
             
             #Exercício Python  006: Crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada.
             case 6:
-                print(Inout,Inout,Ex006,Inout, Inout,Resp)
+                printNomeExercício(n)
                 n1 = float(input("Digite um número: "))
                 print(f"O dobro deste número é: {n1*2}.\n O triplo é {n1*3} e a raiz quadrada {n1**0.5}.")
             
