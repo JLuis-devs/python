@@ -222,10 +222,11 @@ while Fim != 0:
 
             #Exercício Python  021: Faça um programa em que abra e reproduza o áudio de um arquivo MP3.
             case 21:
-                from playsound3 import playsound
                 printNomeExercício(n)
-                playsound('/media/luis/27a6a487-1e65-498d-8948-f25bfab74219/EXTRA/Musica/Luiz Poderoso Chefão/01- Cheiro da Karolina.mp3')
-            
+                import vlc
+                player = vlc.MediaPlayer("./LetoDie_APENAS_25.mp3")
+                player.play()
+                                
             #Exercício Python  022: Crie um programa que leia o nome completo de uma pessoa e mostre:\n– O nome com todas as letras maiúsculas e minúsculas.\n– Quantas letras ao todo (sem considerar espaços).\n– Quantas letras tem o primeiro nome.
             case 22:
                 printNomeExercício(n)
