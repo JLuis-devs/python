@@ -1,3 +1,5 @@
+"""
+
 '''
 Exercício 01
 Transformação de strings
@@ -39,7 +41,7 @@ cadastro = {'Aluno':'Luis','Ano':25}
 print(f'Itens: {cadastro.items()}')
 
 
-
+"""
 
 
 
@@ -49,12 +51,21 @@ print(f'Itens: {cadastro.items()}')
 Manipulação de strings
 Faça um programa que receba uma frase e retorne uma lista de palavras usando split()
 '''
-paragrafo = 'Python also includes a data type for sets. A set is an unordered collection with no duplicate elements. Basic uses include membership testing and eliminating duplicate entries. Set objects also support mathematical operations like union, intersection, difference, and symmetric difference.'
-
-
-n = paragrafo.find(' ')
+paragrafo = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+c=0
+i=0
+print(len(paragrafo))
+print(paragrafo[::-1])
+print(paragrafo[::-1].find(' '))
+print(len(paragrafo) - paragrafo[::-1].find(' '))
+while c <= (len(paragrafo) - paragrafo[::-1].find(' ')):
+    n = paragrafo[i:].find(' ')
+    i = n
+    c = c+1
 print(n)
-print(paragrafo[::2])
+print(paragrafo[::])
+
+
 
 
 '''
