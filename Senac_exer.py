@@ -10,7 +10,7 @@ print('Calculadora de temperatura: \n Opções:\n     [1] - Celsius\n     [2] - 
 print('Exemplo: para calcular de Celsius para Kelvin digite opção 1 enter opção 3.')
 escalaInicial = input('Deseja converter de: ')
 escalaFinal = input('Deseja converter de: ')
-
+'''
 conversao = int(escalaInicial + escalaFinal)
 match conversao:
     case 12:
@@ -26,3 +26,4 @@ match conversao:
     case 32:
     case 33:
 
+'''
