@@ -84,19 +84,24 @@ Use list comprehension para criar uma lista com os comprimentos de cada palavra 
 def exercicio5():
     texto = input('Digite o texto: \n   ')
     lista = []
-    listapalavra = []
-    c = 0
+    listapalavra = {}
+    c = pi = pf = 0
     for n in texto:
-        if n == ' ':
-            print (n)
+        if n == ' ' :
             lista.append(c)
+            listapalavra.update({texto[pi:pf]:c})
+            pi = pf + 1
             c = 0
+
         else:
             c += 1
-
-
-
+        pf += 1        
+    lista.append(c)
+    listapalavra.update({texto[pi:pf]:c})
+   
     print(lista)
+    for x in listapalavra:
+        print(x)
 
 
 
