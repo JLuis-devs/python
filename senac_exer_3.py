@@ -105,7 +105,8 @@ def exercicio5():
     
     print(listapalavra)
 
-    newlist = [x texto.split(' ') ]
+    newlist = [len(x) for x in texto.split(' ') ]
+    print(newlist)
 
 
 
